@@ -1,5 +1,8 @@
+#!/bin/bash
 
-# If id command returns zero, you’ve root access.
+[ -z "$PS1" ] && return
+
+# If id command returns zero, you’ve got root access.
 if [ $(id -u) -eq 0 ];then 
 	# you are root, set red color prompt
 	export PS1="\[\033[1;31m\][\u@\h \W]\\$ \[\033[0m\]"
@@ -7,12 +10,25 @@ else # normal
 	export PS1="\[\033[1;32m\][\u@\h \W]\\$ \[\033[0m\]"
 fi
 
+# load up bash_completion (brew install bash_completion)
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
     . $(brew --prefix)/etc/bash_completion
 fi
 
+# color the shell
 export TERM=xterm-color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+# add `~/bin` to `$PATH`
+export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+
+# add tab completion for `defaults`
+complete -W "NSGlobalDomain" defaults;
+
+# load grc from brew, if it exists (brew install grc)
+if [ -f $(brew --prefix)/etc/grc.bash ]; then
+        . $(brew --prefix)/etc/grc.bash
+fi
