@@ -1,0 +1,13 @@
+#!/bin/bash
+[ -z "$PS1" ] && return
+
+#export PS1="\[\033[1;32m\][\u@\h \W]\\$ \[\033[0m\]"
+#export SUDO_PS1="\[\033[1;31m\][\u@\h \W]\\$ \[\033[0m\]"
+
+# If id command returns zero, you’ve root access.
+if [ $(id -u) -eq 0 ];
+then # you are root, set red color prompt
+export  PS1="\[\033[1;31m\][\u@\h \W]\\$ \[\033[0m\]"
+else # normal
+export  PS1="\[\033[1;32m\][\u@\h \W]\\$ \[\033[0m\]"
+fi

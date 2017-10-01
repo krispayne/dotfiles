@@ -1,0 +1,18 @@
+
+# If id command returns zero, you’ve root access.
+if [ $(id -u) -eq 0 ];then 
+	# you are root, set red color prompt
+	export PS1="\[\033[1;31m\][\u@\h \W]\\$ \[\033[0m\]"
+else # normal
+	export PS1="\[\033[1;32m\][\u@\h \W]\\$ \[\033[0m\]"
+fi
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+    . $(brew --prefix)/etc/bash_completion
+fi
+
+export TERM=xterm-color
+export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
