@@ -1,0 +1,19 @@
+colorscheme badwolf 
+syntax enable " always want syntax on
+
+set tabstop=2 " number of visual spaces per TAB. 2 because YAML
+set tabstop=2 " number of spaces inserted when TAB is pressed when editing. 2 because YAML
+set expandtab " TABS are spaces. TAB equals shortcut for $tabstop number of spaces
+set autoindent " autoindent to same level as previous line. 
+
+set number " show line numbers. I like it, I don't care what you think
+set showcmd " show last command entered
+
+set cursorline " testing this. highlight current line
+
+filetype indent on " load filetype-specific indent files
+
+set showmatch " highlight matching [{()}]
+
+set incsearch " testing this. search as characters are entered
+set hlsearch " highlight matches. :noh is helpful here for when you are done searching.
