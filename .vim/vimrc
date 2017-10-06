@@ -2,7 +2,6 @@ colorscheme badwolf
 syntax enable " always want syntax on
 
 set tabstop=2 " number of visual spaces per TAB. 2 because YAML
-set tabstop=2 " number of spaces inserted when TAB is pressed when editing. 2 because YAML
 set expandtab " TABS are spaces. TAB equals shortcut for $tabstop number of spaces
 set autoindent " autoindent to same level as previous line. 
 
