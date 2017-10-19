@@ -52,3 +52,4 @@ export MANPAGER="less -X"; # Don't clear the screen after quitting `man`
 # Add `~/bin` to `$PATH`
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin/vdevtools/bin:$PATH"
