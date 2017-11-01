@@ -11,8 +11,6 @@ set autoindent " autoindent to same level as previous line.
 set number " show line numbers. I like it, I don't care what you think
 set showcmd " show last command entered
 
-set cursorline " testing this. highlight current line
-
 filetype indent on " load filetype-specific indent files
 
 set showmatch " highlight matching [{()}]
