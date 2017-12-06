@@ -1,5 +1,4 @@
 syntax enable " always want syntax on
-colorscheme badwolf 
 
 set tabstop=2 " number of visual spaces per TAB. 2 because YAML
 set shiftwidth=2
