@@ -28,6 +28,9 @@ if [ $(uname) == "Darwin" ]; then
 
 fi
 
+# vimlife
+alias vi="vim"
+
 # History
 export HISTSIZE=10000; # 10,000 lines of history is MORE than enough
 export HISTFILESIZE=$HISTSIZE;
