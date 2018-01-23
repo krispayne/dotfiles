@@ -1,3 +1,4 @@
+colorscheme base16-tomorrow-night
 syntax enable " always want syntax on
 
 set tabstop=2 " number of visual spaces per TAB. 2 because YAML

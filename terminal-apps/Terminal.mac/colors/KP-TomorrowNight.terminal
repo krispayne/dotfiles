@@ -197,6 +197,8 @@
 	<true/>
 	<key>ProfileCurrentVersion</key>
 	<real>2.0499999999999998</real>
+	<key>ScrollAlternateScreen</key>
+	<false/>
 	<key>ScrollbackLines</key>
 	<real>0.0</real>
 	<key>SelectionColor</key>
