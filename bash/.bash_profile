@@ -28,6 +28,9 @@ if [ $(uname) == "Darwin" ]; then
 
 fi
 
+# Tab complete known_hosts
+complete -W "$(echo `cat ~/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
+
 # vimlife
 alias vi="vim"
 
@@ -40,7 +43,6 @@ export HISTIGNORE="ls:exit:date:history:* --help:* -h"; # ignore unhelpful for t
 export TERM=xterm-256color
 export GREP_OPTIONS='--color=auto' GREP_COLOR='1;32'
 export CLICOLOR=1
-
 # Color `ls`
 if [ $(uname) == "Darwin" ]; then
   alias ls="ls -G"
