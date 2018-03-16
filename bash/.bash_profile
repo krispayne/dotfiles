@@ -62,6 +62,8 @@ export MANPAGER="less -X"; # Don't clear the screen after quitting `man`
 #export LANG="en_US.UTF-8"
 #export LC_ALL="en_US.UTF-8"
 
+export EDITOR="vim"
+
 # Add `~/bin` to `$PATH`
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
