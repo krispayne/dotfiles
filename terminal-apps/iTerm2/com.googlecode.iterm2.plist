@@ -1117,17 +1117,17 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>1619 110 875 226 0 0 2560 1418 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>1009 696 796 473 0 0 2560 1418 </string>
+	<string>811 654 1018 447 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>400 4 1280 1024 0 0 1680 1028 </string>
+	<string>954 464 652 494 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>0 5 1280 1413 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>1280 5 1280 1413 0 0 2560 1418 </string>
+	<string>1280 115 1210 1302 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>1280 5 1280 1413 0 0 2560 1418 </string>
+	<string>0 4 1280 707 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
-	<string>395 251 780 713 0 0 2560 1418 </string>
+	<string>277 726 652 494 0 0 2560 1418 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
 	<string>427 89 780 728 0 0 2560 1418 </string>
 	<key>NeverWarnAboutShortLivedSessions_04CACCC6-B0A5-4F3F-9477-76F5D3C5D9EB</key>
@@ -1925,7 +1925,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.5</string>
+	<string>3.1.6</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
