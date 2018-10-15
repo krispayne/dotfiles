@@ -7,7 +7,7 @@ set softtabstop=2
 set smarttab
 set expandtab " TABS are spaces. TAB equals shortcut for $tabstop number of spaces
 set autoindent " autoindent to same level as previous line. 
-set paste
+"set paste " this makes insert mode 'paste' all the time...
 
 set number " show line numbers. I like it, I don't care what you think
 set showcmd " show last command entered
