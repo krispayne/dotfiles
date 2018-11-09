@@ -28,6 +28,16 @@ if [ $(uname) == "Darwin" ]; then
 
 fi
 
+# Update PATH
+export PATH="$HOME/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/bin/vdevtools/bin:$PATH"
+
+# tmuxp
+eval "$(_TMUXP_COMPLETE=source tmuxp)"
+
 # Tab complete known_hosts
 complete -W "$(echo `cat ${HOME}/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
 
@@ -56,15 +66,5 @@ export LESS_TERMCAP_md=$(tput bold; tput setaf 3); # Highlight section titles in
 
 export MANPAGER="less -X"; # Don't clear the screen after quitting `man`
 
-# Language
-# this may not be portable in my work environment! Commented by default.
-# Prefer US English and use UTF-8
-#export LANG="en_US.UTF-8"
-#export LC_ALL="en_US.UTF-8"
-
 export EDITOR="vim"
 
-# Add `~/bin` to `$PATH`
-export PATH="$HOME/bin:$PATH"
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/bin/vdevtools/bin:$PATH"
