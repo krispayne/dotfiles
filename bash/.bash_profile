@@ -32,11 +32,7 @@ fi
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
 export PATH="/usr/local/bin/vdevtools/bin:$PATH"
-
-# tmuxp
-eval "$(_TMUXP_COMPLETE=source tmuxp)"
 
 # Tab complete known_hosts
 complete -W "$(echo `cat ${HOME}/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,.*//g | uniq | grep -v "\["`;)" ssh
