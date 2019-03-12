@@ -5,7 +5,7 @@ set tabstop=2 " number of visual spaces per TAB. 2 because YAML
 set shiftwidth=2
 set softtabstop=2
 set smarttab
-set noexpandtab " TABS are spaces. TAB equals shortcut for $tabstop number of spaces
+set noexpandtab
 set autoindent " autoindent to same level as previous line. 
 "set paste " this makes insert mode 'paste' all the time...
 
