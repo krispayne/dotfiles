@@ -32,6 +32,7 @@ fi
 export PATH="$HOME/bin:$PATH"
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
+export PATH="$HOME/.local/lib/python2.7/site-packages:$PATH"
 export PATH="/usr/local/bin/vdevtools/bin:$PATH"
 
 # Tab complete known_hosts
