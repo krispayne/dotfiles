@@ -63,4 +63,3 @@ export LESS_TERMCAP_md=$(tput bold; tput setaf 3); # Highlight section titles in
 export MANPAGER="less -X"; # Don't clear the screen after quitting `man`
 
 export EDITOR="vim"
-
