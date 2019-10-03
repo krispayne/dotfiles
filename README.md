@@ -9,9 +9,9 @@ Each app has a directory of config files, those are then `stow $APP` linked from
 
 Here's how I do it:
 
-`~/dotfiles/bash/.bash_profile -> ~/.bash_profile`
+`~/src/dotfiles/bash/.bash_profile -> ~/.bash_profile`
 
-`cd ~/dotfiles`
+`cd ~/src/dotfiles`
 
 `stow -t /data/home/kris/ -d /data/home/kris/src/dotfiles/ vim`
 `stow -t /data/home/kris/ -d /data/home/kris/src/dotfiles/ bash`
