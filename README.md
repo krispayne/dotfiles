@@ -13,7 +13,8 @@ Here's how I do it:
 
 `cd ~/dotfiles`
 
-`stow bash`
-`stow tmux`
+`stow -t /data/home/kris/ -d /data/home/kris/src/dotfiles/ vim`
+`stow -t /data/home/kris/ -d /data/home/kris/src/dotfiles/ bash`
+`stow -t /data/home/kris/ -d /data/home/kris/src/dotfiles/ tmux`
 etc
 
