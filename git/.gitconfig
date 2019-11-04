@@ -3,15 +3,24 @@
 	name = Kris Payne
 	email = kris@voleon.com
 
-[alias]
-ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
-ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
-le = log --oneline --decorate
-la = "!git config -l | grep alias | cut -c 7-"
+[credential]
+	helper = osxkeychain
 
-update = "!git checkout master && git pull && git checkout kris && git merge master && git push && git status"
-pr="!f() { \
-	BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD); \
-	git push -u origin $BRANCH_NAME; \
-	hub pull-request; \
-	};f "
+[alias]
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	le = log --oneline --decorate
+	la = "!git config -l | grep alias | cut -c 7-"
+
+	update = "!git checkout master && git pull && git checkout kris && git merge master && git push && git status"
+	pr="!f() { \
+		BRANCH_NAME=$(git rev-parse --abbrev-ref HEAD); \
+		git push -u origin $BRANCH_NAME; \
+		hub pull-request; \
+		};f "
+
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
