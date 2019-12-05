@@ -24,6 +24,8 @@ fi
 
 autoload -Uz compinit && compinit
 
+setopt interactivecomments
+
 # PATH
 export PATH="/usr/local/sbin:$PATH"
 export PATH="/usr/local/bin:$PATH"
