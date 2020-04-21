@@ -1,6 +1,8 @@
 #!/bin/zsh
 # zsh rc
 
+bindkey -e
+
 PROMPT='[%F{cyan}%n@%m%f %F{magenta}%1~%f]%# '
 
 # Determine if on Mac or Linux
