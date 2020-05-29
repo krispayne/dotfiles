@@ -2,6 +2,7 @@
 # zsh rc
 
 bindkey -e
+bindkey "\e[3~" delete-char
 
 PROMPT='[%F{cyan}%n@%m%f %F{magenta}%1~%f]%# '
 
