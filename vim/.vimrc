@@ -1,9 +1,9 @@
 colorscheme base16-tomorrow-night
 syntax enable " always want syntax on
 
-set tabstop=2 " number of visual spaces per TAB. 2 because YAML
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 set smarttab
 set expandtab
 set autoindent " autoindent to same level as previous line. 
