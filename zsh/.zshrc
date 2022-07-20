@@ -35,6 +35,9 @@ export PATH="/usr/local/bin:$PATH"
 export PATH="$HOME/src/vdevtools/bin:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.332.b09-2.el8_6.x86_64/jre
+export GROOVY_HOME=/opt/groovy-4.0.0
+export PATH=$PATH:$GROOVY_HOME/bin
 
 # vimlife
 alias vi="vim"
