@@ -1,6 +1,4 @@
 #!/bin/zsh
-# zsh rc
-
 bindkey -e
 bindkey "\e[3~" delete-char
 
@@ -25,13 +23,13 @@ elif [[ $(uname) == "Linux" ]]; then
 	# Linux
 fi
 
+zstyle ':completion:*' menu select
+
 # Highlight the current autocomplete option
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
 # Better SSH/Rsync/SCP Autocomplete
-zstyle ':completion:*:(scp|rsync):*' tag-order ' hosts:-ipaddr:ip\ address hosts:-host:host files'
-zstyle ':completion:*:(ssh|scp|rsync):*:hosts-host' ignored-patterns '*(.|:)*' loopback ip6-loopback localhost ip6-localhost broadcasthost
-zstyle ':completion:*:(ssh|scp|rsync):*:hosts-ipaddr' ignored-patterns '^(<->.<->.<->.<->|(|::)([[:xdigit:].]##:(#c,2))##(|%*))' '127.0.0.<->' '255.255.255.255' '::1' 'fe80::*'
+zstyle -e ':completion:*:(ssh|scp|sftp|rsh|rsync):hosts' hosts 'reply=(${=${${(f)"$(cat {~/.ssh/known_}hosts(|2)(N) /dev/null)"}%%[# ]*}//,/ })'
 
 # Allow for autocomplete to be case insensitive
 zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' \
@@ -43,11 +41,8 @@ autoload -Uz compinit && compinit -i
 setopt interactivecomments
 
 # PATH
-export PATH="/usr/local/sbin:$PATH"
-export PATH="/usr/local/bin:$PATH"
-export PATH="$HOME/src/vdevtools/bin:$PATH"
-export PATH="$HOME/bin:$PATH"
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="/usr/local/sbin:/usr/local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/bin:$HOME/src/vdevtools/bin:$PATH"
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.332.b09-2.el8_6.x86_64/jre
 export GROOVY_HOME=/opt/groovy-4.0.0
 export PATH=$PATH:$GROOVY_HOME/bin
