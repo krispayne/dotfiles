@@ -28,5 +28,5 @@
 [pull]
 	rebase = false
 
-[includeIf "gitdir:~/src"]
-  path = ~/src/.gitconfig
+[includeIf "gitdir:~/work-src"]
+  path = ~/work-src/.gitconfig
