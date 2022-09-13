@@ -29,4 +29,4 @@
 	rebase = false
 
 [includeIf "gitdir:~/src"]
-  path = ~/work/.gitconfig
+  path = ~/src/.gitconfig
