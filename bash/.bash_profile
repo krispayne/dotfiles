@@ -42,6 +42,7 @@ complete -W "$(echo `cat ${HOME}/.ssh/known_hosts | cut -f 1 -d ' ' | sed -e s/,
 alias vi="vim"
 
 # History
+export HISTFILE="~/.bash_history"
 export HISTSIZE=10000; # 10,000 lines of history is MORE than enough
 export HISTFILESIZE=$HISTSIZE;
 export HISTIGNORE="ls:exit:date:history:* --help:* -h"; # ignore unhelpful for time travelling.
