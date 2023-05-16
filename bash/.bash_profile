@@ -36,7 +36,6 @@ export PATH="/usr/local/bin/vdevtools/bin:$PATH"
 alias vi="vim"
 
 # History
-export HISTFILE="~/.bash_history"
 export HISTSIZE=10000; # 10,000 lines of history is MORE than enough
 export HISTFILESIZE=$HISTSIZE;
 export HISTIGNORE="ls:exit:date:history:* --help:* -h"; # ignore unhelpful for time travelling.
