@@ -34,7 +34,6 @@ export PATH="$GROOVY_HOME/bin:$PATH"
 export LESS_TERMCAP_md=$(tput bold; tput setaf 3); # Highlight section titles in man pages
 export MANPAGER="less -X"; # Don't clear the screen after quitting `man`
 
-
 # vimlife
 alias vi="vim"
 
