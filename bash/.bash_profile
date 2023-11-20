@@ -13,16 +13,6 @@ fi
 # determine if on mac or linux
 if [ $(uname) == "Darwin" ]; then
 
-  # Load bash_completion (brew install bash_completion)
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
-      . $(brew --prefix)/etc/bash_completion
-  fi
-
-  # Load grc from brew, if it exists (brew install grc)
-  if [ -f $(brew --prefix)/etc/grc.bash ]; then
-        . $(brew --prefix)/etc/grc.bash
-  fi
-
   # Add tab completion for `defaults`
   complete -W "NSGlobalDomain" defaults;
 
