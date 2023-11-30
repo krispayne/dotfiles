@@ -4,11 +4,14 @@ bindkey "\e[3~" delete-char
 
 PROMPT='[%F{cyan}%n@%m%f %F{magenta}%1~%f]%# '
 
-# Determine if on Mac or Linux
 if [[ $(uname) == "Darwin" ]]; then
-	
-elif [[ $(uname) == "Linux" ]]; then
-	# Linux
+# Color `ls`
+  alias ls="ls -G"
+  export LSCOLORS=ExFxCxDxBxegedabagacad
+else
+# Color `ls`
+  alias ls="ls --color=always"
+  export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
 fi
 
 zstyle ':completion:*' menu select
@@ -26,15 +29,13 @@ autoload -Uz compinit && compinit -i
 setopt interactivecomments
 
 # PATH and other exports
-export MANPATH="/opt/local/share/man:$MANPATH"
-export PATH="/opt/local/bin:/opt/local/sbin:$HOME/.local/bin:$HOME/work-src/vdevtools/bin:$PATH"
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.332.b09-2.el8_6.x86_64/jre"
 export GROOVY_HOME="/opt/groovy-4.0.0"
-export PATH="$GROOVY_HOME/bin:$PATH"
+export PATH="/opt/local/bin:/opt/local/sbin:$HOME/.local/bin:$HOME/work-src/vdevtools/bin:$GROOVY_HOME/bin:$PATH"
 export LESS_TERMCAP_md=$(tput bold; tput setaf 3); # Highlight section titles in man pages
+export MANPATH="/opt/local/share/man:$MANPATH"
 export MANPAGER="less -X"; # Don't clear the screen after quitting `man`
 
-# vimlife
 alias vi="vim"
 
 # History
@@ -49,13 +50,4 @@ setopt HIST_REDUCE_BLANKS
 setopt INC_APPEND_HISTORY
 setopt APPEND_HISTORY
 setopt SHARE_HISTORY
-
-# Color `ls`
-if [[ $(uname) == "Darwin" ]]; then
-  alias ls="ls -G"
-  export LSCOLORS=ExFxCxDxBxegedabagacad
-else
-  alias ls="ls --color=always"
-  export LS_COLORS="di=34:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
-fi
 
