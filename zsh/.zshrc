@@ -32,6 +32,7 @@ setopt interactivecomments
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.332.b09-2.el8_6.x86_64/jre"
 export GROOVY_HOME="/opt/groovy-4.0.0"
 export PATH="/opt/local/bin:/opt/local/sbin:$HOME/.local/bin:$HOME/work-src/vdevtools/bin:$GROOVY_HOME/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/work-src/vdevtools/bin:$GROOVY_HOME/bin:/opt/local/bin:/opt/local/sbin:$PATH"
 export LESS_TERMCAP_md=$(tput bold; tput setaf 3); # Highlight section titles in man pages
 export MANPATH="/opt/local/share/man:$MANPATH"
 export MANPAGER="less -X"; # Don't clear the screen after quitting `man`
