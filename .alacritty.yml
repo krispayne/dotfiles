@@ -1,11 +1,24 @@
 ---
   window:
     opacity: 0.8
-    padding.x: 10
-    padding.y: 10
+    padding:
+      x: 10
+      y: 10
     decorations: "Full"
     decorations_theme_variant: "Dark"
 
   font:
-    normal.family: "Monaco"
+    normal:
+      family: Monaco
+    
+    bold:
+      family: Monaco
+      style: bold
+    
     size: 13.0
+    offset:
+      x: 1
+      y: 2
+    glyph_offset:
+      x: 0
+      y: 0
