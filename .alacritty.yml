@@ -2,7 +2,7 @@
   window:
     opacity: 0.8
     padding:
-      x: 7
+      x: 17
       y: 5
     decorations: "Full"
     decorations_theme_variant: "Dark"
