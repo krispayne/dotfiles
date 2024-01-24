@@ -5,7 +5,7 @@
       x: 5
       y: 5
     decorations: "Full"
-    gtk_theme_variant: "Dark"
+    decorations_theme_variant: "Dark"
 
   font:
     normal:
