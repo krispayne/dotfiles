@@ -3,9 +3,11 @@ Each app has a directory of config files, those are then `stow $APP` linked from
 
 Here's how I do it:
 
-`git clone repo .dotfiles`
-`cd .dotfiles`
-`stow vim`
-`stow zsh`
-`stow tmux`
+```
+git clone repo .dotfiles
+cd .dotfiles
+stow vim
+stow zsh
+stow tmux
+```
 etc
