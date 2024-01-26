@@ -27,4 +27,4 @@
       y: 0
 
   env:
-    WINIT_X11_SCALE_FACTOR: ".83"
+    WINIT_X11_SCALE_FACTOR: ".84"
