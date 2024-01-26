@@ -9,11 +9,11 @@
 
   font:
     normal:
-      family: Monaco
+      family: MonacoB
       style: Bold
     
     bold:
-      family: Monaco
+      family: MonacoB2
       style: bold
     
     size: 13.0
