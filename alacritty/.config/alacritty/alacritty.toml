@@ -9,8 +9,8 @@ decorations = "Full"
 decorations_theme_variant = "Dark"
 
 [font]
-normal = {family = "MonacoB", style = "bold"}
-bold = {family = "MonacoB2", style = "bold"}
-size = 13.0
-offset = { x = 1, y = 2}
+normal = {family = "Monaco", style = "Regular"}
+bold = {family = "Monaco", style = "bold"}
+size = 15.0
+offset = { x = 0, y = 0}
 glyph_offset = { x = 0, y = 0}
