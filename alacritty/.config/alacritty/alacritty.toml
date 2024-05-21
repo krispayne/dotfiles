@@ -1,0 +1,16 @@
+import = []
+[env]
+WINIT_X11_SCALE_FACTOR = ".81"
+
+[window]
+opacity = 0.875
+padding = {x = 10, y = 5}
+decorations = "Full"
+decorations_theme_variant = "Dark"
+
+[font]
+normal = {family = "MonacoB", style = "bold"}
+bold = {family = "MonacoB2", style = "bold"}
+size = 13.0
+offset = { x = 1, y = 2}
+glyph_offset = { x = 0, y = 0}
