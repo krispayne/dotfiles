@@ -18,3 +18,4 @@ set showmatch " highlight matching [{()}]
 
 set incsearch " testing this. search as characters are entered
 set hlsearch " highlight matches. :noh is helpful here for when you are done searching.
+highlight LineNr ctermbg=NONE ctermfg=White
