@@ -8,6 +8,7 @@ set smarttab
 set expandtab
 set autoindent " autoindent to same level as previous line. 
 filetype indent on " load filetype-specific indent files
+filetype plugin on " load filetype-specific indent files
 
 set number " show line numbers.
 set showcmd " show last command entered
