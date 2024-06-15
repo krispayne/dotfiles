@@ -7,12 +7,11 @@ set softtabstop=2
 set smarttab
 set expandtab
 set autoindent " autoindent to same level as previous line. 
-"set paste " this makes insert mode 'paste' all the time...
+filetype indent on " load filetype-specific indent files
 
-set number " show line numbers. I like it, I don't care what you think
+set number " show line numbers.
 set showcmd " show last command entered
 
-filetype indent on " load filetype-specific indent files
 set ruler
 set showmatch " highlight matching [{()}]
 
