@@ -1,3 +1,6 @@
+[general]
+import = ["~/.config/alacritty/base16-tomorrow-night-256.toml"]
+
 [env]
 WINIT_X11_SCALE_FACTOR = ".81"
 LANGUAGE = "en_US"
@@ -10,7 +13,7 @@ decorations_theme_variant = "Dark"
 
 [font]
 normal = {family = "Monaco", style = "Regular"}
-bold = {family = "Monaco", style = "bold"}
+bold = {family = "Monaco", style = "Bold"}
 size = 15.0
 offset = { x = 0, y = 0}
 glyph_offset = { x = 0, y = 0}
@@ -18,5 +21,10 @@ glyph_offset = { x = 0, y = 0}
 [selection]
 save_to_clipboard = true
 
-[general]
-import = ["~/.config/alacritty/base16-tomorrow-night-256.toml"]
+[cursor]
+style = {shape = "Block", blinking = "On"}
+
+[[hints.enabled]]
+hyperlinks = false
+regex = "(https://|http://)"
+command = "open"
