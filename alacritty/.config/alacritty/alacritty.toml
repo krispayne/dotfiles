@@ -1,5 +1,5 @@
 [general]
-import = ["~/.config/alacritty/base16-tomorrow-night-256.toml"]
+import = ["~/.config/alacritty/city-lights.toml"]
 
 [env]
 WINIT_X11_SCALE_FACTOR = ".81"
@@ -22,7 +22,7 @@ glyph_offset = { x = 0, y = 0}
 save_to_clipboard = true
 
 [cursor]
-style = {shape = "Block", blinking = "On"}
+style = {shape = "Block", blinking = "Always"}
 
 [[hints.enabled]]
 hyperlinks = false

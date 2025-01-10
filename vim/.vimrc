@@ -1,4 +1,4 @@
-colorscheme base16-tomorrow-night
+colorscheme citylights
 syntax enable " always want syntax on
 
 set tabstop=2
@@ -7,6 +7,7 @@ set softtabstop=2
 set smarttab
 set expandtab
 set autoindent " autoindent to same level as previous line. 
+filetype on
 filetype indent on " load filetype-specific indent files
 filetype plugin on " load filetype-specific indent files
 
