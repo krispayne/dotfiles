@@ -31,7 +31,6 @@ setopt interactivecomments
 
 # PATH and other exports
 export JAVA_HOME="/usr/lib/jvm/java-1.8.0-openjdk-1.8.0.332.b09-2.el8_6.x86_64/jre"
-export BREW_PATH="/opt/homebrew/sbin"
 export PYTHON_HOME="$HOME/Library/Python/3.10"
 export PATH="$HOME/.local/bin:$HOME/vgithub/vdevtools/bin:$PYTHON_HOME/bin:$BREW_PATH:$PATH"
 export LESS_TERMCAP_md=$(tput bold; tput setaf 3); # Highlight section titles in man pages
