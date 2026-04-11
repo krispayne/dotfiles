@@ -12,6 +12,7 @@ fi
 
 if [[ $(uname) == "Darwin" ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
+  export TERM="xterm-256color"
 # Color `ls`
   alias ls="ls -G"
   export LSCOLORS=ExFxCxDxBxegedabagacad
@@ -42,7 +43,6 @@ export PATH="$HOME/.local/bin:$HOME/vgithub/vdevtools/bin:$PYTHON_HOME/bin:$BREW
 export LESS_TERMCAP_md=$(tput bold; tput setaf 3); # Highlight section titles in man pages
 export MANPATH="/opt/local/share/man:$MANPATH"
 export MANPAGER="less -X"; # Don't clear the screen after quitting `man`
-export TERM="xterm-256color"
 
 alias vi="vim"
 
