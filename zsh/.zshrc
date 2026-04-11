@@ -4,6 +4,12 @@ bindkey "\e[3~" delete-char
 
 PROMPT='[%F{cyan}%n@%m%f %F{magenta}%1~%f]%# '
 
+HOSTNAME=$(hostname)
+# Always use the stable symlink for SSH agent
+if [ -S "$HOME/.ssh/ssh_auth_sock.$HOSTNAME" ]; then
+    export SSH_AUTH_SOCK="$HOME/.ssh/ssh_auth_sock.$HOSTNAME"
+fi
+
 if [[ $(uname) == "Darwin" ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
 # Color `ls`
@@ -36,6 +42,7 @@ export PATH="$HOME/.local/bin:$HOME/vgithub/vdevtools/bin:$GROOVY_HOME/bin:$PATH
 export LESS_TERMCAP_md=$(tput bold; tput setaf 3); # Highlight section titles in man pages
 export MANPATH="/opt/local/share/man:$MANPATH"
 export MANPAGER="less -X"; # Don't clear the screen after quitting `man`
+export TERM="xterm-256color"
 
 alias vi="vim"
 
