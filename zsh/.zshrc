@@ -4,8 +4,15 @@ bindkey "\e[3~" delete-char
 
 PROMPT='[%F{cyan}%n@%m%f %F{magenta}%1~%f]%# '
 
+HOSTNAME=$(hostname)
+# Always use the stable symlink for SSH agent
+if [ -S "$HOME/.ssh/ssh_auth_sock.$HOSTNAME" ]; then
+    export SSH_AUTH_SOCK="$HOME/.ssh/ssh_auth_sock.$HOSTNAME"
+fi
+
 if [[ $(uname) == "Darwin" ]]; then
   export PATH="/opt/homebrew/bin:$PATH"
+  export TERM="xterm-256color"
 # Color `ls`
   alias ls="ls -G"
   export LSCOLORS=ExFxCxDxBxegedabagacad
