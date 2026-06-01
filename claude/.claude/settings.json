@@ -13,7 +13,10 @@
       "Bash(bazel test *)",
       "Bash(git log *)",
       "mcp__atlassian__getConfluencePage",
-      "mcp__atlassian__getJiraIssue"
+      "mcp__atlassian__getJiraIssue",
+      "mcp__github-mcp__get_repo",
+      "mcp__github-mcp__search_repos",
+      "mcp__github-mcp__get_file"
     ]
   }
 }
